@@ -39,25 +39,6 @@
   p{margin:0;}
   .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px;}
   a{color:inherit;}
-  [contenteditable="true"]{outline:none;}
-  [contenteditable="true"]:hover{background:rgba(180,132,44,0.10);border-radius:3px;box-shadow:0 0 0 3px rgba(180,132,44,0.10);}
-  [contenteditable="true"]:focus{background:rgba(180,132,44,0.14);border-radius:3px;box-shadow:0 0 0 3px rgba(180,132,44,0.35);}
-
-  /* edit hint */
-  .edit-hint{
-    position:fixed;top:14px;left:50%;transform:translateX(-50%);
-    background:var(--ink);color:var(--cream);
-    font-size:12.5px;letter-spacing:.02em;
-    padding:9px 16px;border-radius:20px;
-    z-index:999;display:flex;align-items:center;gap:8px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.25);
-    opacity:0.95;
-  }
-  .edit-hint svg{width:13px;height:13px;flex:none;}
-  .edit-hint button{
-    background:none;border:none;color:var(--cream-dim);
-    font-size:15px;line-height:1;cursor:pointer;padding:0 0 0 6px;
-  }
 
   /* ---------- HERO ---------- */
   .hero{
@@ -262,24 +243,18 @@
   </div>
 </div>
 
-<div class="edit-hint" id="editHint">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-  Клікніть на будь-який текст і редагуйте прямо тут
-  <button onclick="document.getElementById('editHint').style.display='none'" aria-label="Закрити підказку">×</button>
-</div>
-
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow" contenteditable="true">Регіональний осередок м. Дніпро · ІРСГП</span>
-    <h1 contenteditable="true">Вступ до символдрами: теорія і практика</h1>
-    <p class="lead" contenteditable="true">Базовий курс з методу символдрами. Перший дотик до глибинної психодинамічної роботи — без зобов'язання одразу йти на чотирирічне навчання.</p>
+    <span class="eyebrow">Регіональний осередок м. Дніпро · ІРСГП</span>
+    <h1>Вступ до символдрами: теорія і практика</h1>
+    <p class="lead">Базовий курс з методу символдрами. Перший дотик до глибинної психодинамічної роботи — без зобов'язання одразу йти на чотирирічне навчання.</p>
     <div class="hero-meta">
-      <span>◦ <b contenteditable="true">Група «Зима 2026–2027»</b></span>
-      <span>◦ <b contenteditable="true">Онлайн, Zoom</b></span>
-      <span>◦ <b contenteditable="true">80 ак. год.</b>, 4 семінари</span>
+      <span>◦ <b>Група «Зима 2026–2027»</b></span>
+      <span>◦ <b>Онлайн, Zoom</b></span>
+      <span>◦ <b>80 ак. год.</b>, 4 семінари</span>
     </div>
-    <a href="https://forms.gle/xReoAgPkC9VFw92t5" class="cta" contenteditable="true">Подати заявку</a>
+    <a href="https://forms.gle/xReoAgPkC9VFw92t5" class="cta">Подати заявку</a>
   </div>
   <svg class="horizon" viewBox="0 0 1200 160" preserveAspectRatio="none">
     <path d="M0,160 L0,120 C60,105 120,130 190,118 C250,108 300,80 360,70 C410,62 440,95 480,100 C540,108 560,60 610,45 C660,30 700,70 760,85 C820,100 860,60 920,50 C970,42 1010,80 1060,95 C1110,108 1150,100 1200,110 L1200,160 Z" fill="#0F1B14"/>
@@ -293,10 +268,10 @@
 <!-- PAIN POINTS -->
 <section>
   <div class="wrap">
-    <div class="kicker" contenteditable="true">Знайомо?</div>
-    <h2 class="title" contenteditable="true">Клієнт сидить навпроти, говорить — а Ви ловите себе на думці: ми вже це проходили</h2>
-    <p class="section-sub" contenteditable="true">Третя сесія поспіль про те саме, тільки іншими словами. Ви застосовуєте техніку за технікою, а всередині наростає відчуття, ніби ви щось не бачите. Щось важливе лишається за кадром розмови, і жодне уточнююче питання туди не дістає.</p>
-    <p class="pull" style="color:var(--ink);border-left-color:var(--gold);margin-top:32px;" contenteditable="true">А якщо я скажу, що є метод психотерапії, який дозволяє працювати з несвідомим напряму?</p>
+    <div class="kicker">Знайомо?</div>
+    <h2 class="title">Клієнт сидить навпроти, говорить — а Ви ловите себе на думці: ми вже це проходили</h2>
+    <p class="section-sub">Третя сесія поспіль про те саме, тільки іншими словами. Ви застосовуєте техніку за технікою, а всередині наростає відчуття, ніби ви щось не бачите. Щось важливе лишається за кадром розмови, і жодне уточнююче питання туди не дістає.</p>
+    <p class="pull" style="color:var(--ink);border-left-color:var(--gold);margin-top:32px;">А якщо я скажу, що є метод психотерапії, який дозволяє працювати з несвідомим напряму?</p>
   </div>
 </section>
 
@@ -304,15 +279,15 @@
 <section class="section-dark">
   <div class="wrap">
     <div class="kicker">Чому саме зараз</div>
-    <h2 class="title" contenteditable="true">2026 рік не дає розкоші працювати «просто технікою»</h2>
-    <p class="pull" contenteditable="true">Ресурс — і клієнта, і терапевта — сьогодні найдефіцитніший матеріал у кабінеті. Символдрама дає інструмент не лише дістатись до глибини конфлікту, а й одразу працювати з відновленням внутрішнього ресурсу.</p>
+    <h2 class="title">2026 рік не дає розкоші працювати «просто технікою»</h2>
+    <p class="pull">Ресурс — і клієнта, і терапевта — сьогодні найдефіцитніший матеріал у кабінеті. Символдрама дає інструмент не лише дістатись до глибини конфлікту, а й одразу працювати з відновленням внутрішнього ресурсу.</p>
     <div class="two-col" style="margin-top:56px;">
       <div>
-        <p contenteditable="true" style="font-size:16px;color:var(--cream-dim);">Коли клієнт уявляє образ — дерево, будинок, луг, джерело — психічний захист послаблюється. На поверхню виходить те, що людина не готова сформулювати словами: витіснений конфлікт, заморожений афект, травматичний слід, який роками впливав на її рішення, стосунки, тіло — а вона сама не бачила зв'язку.</p>
+        <p style="font-size:16px;color:var(--cream-dim);">Коли клієнт уявляє образ — дерево, будинок, луг, джерело — психічний захист послаблюється. На поверхню виходить те, що людина не готова сформулювати словами: витіснений конфлікт, заморожений афект, травматичний слід, який роками впливав на її рішення, стосунки, тіло — а вона сама не бачила зв'язку.</p>
       </div>
       <div class="card">
-        <h3 contenteditable="true">Метод, а не набір технік</h3>
-        <p contenteditable="true">Створений Ханскарлом Льойнером для роботи з травмами після Другої світової — сьогодні звучить в Україні так, наче створений для цього часу.</p>
+        <h3>Метод, а не набір технік</h3>
+        <p>Створений Ханскарлом Льойнером для роботи з травмами після Другої світової — сьогодні звучить в Україні так, наче створений для цього часу.</p>
       </div>
     </div>
   </div>
@@ -322,16 +297,16 @@
 <section>
   <div class="wrap">
     <div class="kicker">Без зобов'язань</div>
-    <h2 class="title" contenteditable="true">Ваш перший дотик до методу — не вхідний квиток у 4 роки навчання</h2>
-    <p class="section-sub" contenteditable="true">Базовий курс — повноцінне знайомство з методом: теорія, демонстрації, практика в малих групах з першого модуля. Після нього ви точно відчуєте, ваше це чи ні, бо ви на собі проживете і відчуєте роботу в мотивах.</p>
+    <h2 class="title">Ваш перший дотик до методу — не вхідний квиток у 4 роки навчання</h2>
+    <p class="section-sub">Базовий курс — повноцінне знайомство з методом: теорія, демонстрації, практика в малих групах з першого модуля. Після нього ви точно відчуєте, ваше це чи ні, бо ви на собі проживете і відчуєте роботу в мотивах.</p>
     <div class="two-col">
       <div class="card">
-        <h3 contenteditable="true">Якщо ваше</h3>
-        <p contenteditable="true">За бажанням продовжуєте на сертифікаційній програмі «Консультант за методом символдрами» — без додаткових іспитів.</p>
+        <h3>Якщо ваше</h3>
+        <p>За бажанням продовжуєте на сертифікаційній програмі «Консультант за методом символдрами» — без додаткових іспитів.</p>
       </div>
       <div class="card">
-        <h3 contenteditable="true">Якщо ні</h3>
-        <p contenteditable="true">Зупиняєтесь на здобутому і вже застосовуєте окремі мотиви у своїй практиці. Курс дає ясність, а не зобов'язання.</p>
+        <h3>Якщо ні</h3>
+        <p>Зупиняєтесь на здобутому і вже застосовуєте окремі мотиви у своїй практиці. Курс дає ясність, а не зобов'язання.</p>
       </div>
     </div>
   </div>
@@ -341,11 +316,11 @@
 <section class="section-dark">
   <div class="wrap">
     <div class="kicker">Реформа галузі</div>
-    <h2 class="title" contenteditable="true">Символдрама і закон про систему охорони психічного здоров'я</h2>
-    <p class="section-sub" contenteditable="true" style="color:var(--cream-dim);">У лютому 2026 року в Україні набув чинності закон, що запроваджує сертифікацію психологів і психотерапевтів через саморегулівні організації з міжнародним визнанням.</p>
+    <h2 class="title">Символдрама і закон про систему охорони психічного здоров'я</h2>
+    <p class="section-sub" style="color:var(--cream-dim);">У лютому 2026 року в Україні набув чинності закон, що запроваджує сертифікацію психологів і психотерапевтів через саморегулівні організації з міжнародним визнанням.</p>
     <div class="law-box">
       <div class="num">IGKB</div>
-      <p contenteditable="true">ІРСГП — повноправний член Міжнародного товариства кататимного переживання образів (IGKB), визнаний Українською Спілкою психотерапевтів, відповідає стандартам Європейської асоціації психотерапії (EAP). Навчаючись методу зараз, ви будуєте кваліфікацію в напрямку, який відповідає вимогам галузі, що змінюється просто зараз.</p>
+      <p>ІРСГП — повноправний член Міжнародного товариства кататимного переживання образів (IGKB), визнаний Українською Спілкою психотерапевтів, відповідає стандартам Європейської асоціації психотерапії (EAP). Навчаючись методу зараз, ви будуєте кваліфікацію в напрямку, який відповідає вимогам галузі, що змінюється просто зараз.</p>
     </div>
   </div>
 </section>
@@ -354,14 +329,14 @@
 <section>
   <div class="wrap">
     <div class="kicker">Результат</div>
-    <h2 class="title" contenteditable="true">Що дає базовий курс</h2>
+    <h2 class="title">Що дає базовий курс</h2>
     <div class="checklist">
-      <div class="check"><span class="dot"></span><span contenteditable="true">Чітку структуру ведення психотерапевтичної сесії методом символдрами</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Навички роботи з глибинними афектами та ресурсними станами психіки</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Інструменти для роботи з тривогою, нестабільністю, психосоматикою</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Розуміння психотерапевтичного сеттингу і професійних рамок</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Більшу впевненість у роботі зі складними випадками</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Сертифікат ІРСГП, зарахований у програму підготовки консультанта КІП</span></div>
+      <div class="check"><span class="dot"></span><span>Чітку структуру ведення психотерапевтичної сесії методом символдрами</span></div>
+      <div class="check"><span class="dot"></span><span>Навички роботи з глибинними афектами та ресурсними станами психіки</span></div>
+      <div class="check"><span class="dot"></span><span>Інструменти для роботи з тривогою, нестабільністю, психосоматикою</span></div>
+      <div class="check"><span class="dot"></span><span>Розуміння психотерапевтичного сеттингу і професійних рамок</span></div>
+      <div class="check"><span class="dot"></span><span>Більшу впевненість у роботі зі складними випадками</span></div>
+      <div class="check"><span class="dot"></span><span>Сертифікат ІРСГП, зарахований у програму підготовки консультанта КІП</span></div>
     </div>
   </div>
 </section>
@@ -370,38 +345,38 @@
 <section class="section-dark">
   <div class="wrap">
     <div class="kicker">Шлях мотивів</div>
-    <h2 class="title" contenteditable="true">Від опори — до глибини</h2>
-    <p class="section-sub" contenteditable="true" style="color:var(--cream-dim);">Мотиви курсу вибудовані не випадково: кожен наступний веде трохи глибше — від стабілізації ресурсу до першої обережної конфронтації з витісненим.</p>
+    <h2 class="title">Від опори — до глибини</h2>
+    <p class="section-sub" style="color:var(--cream-dim);">Мотиви курсу вибудовані не випадково: кожен наступний веде трохи глибше — від стабілізації ресурсу до першої обережної конфронтації з витісненим.</p>
     <div class="motif-path">
       <div class="motif">
         <div class="stage">01 · Стабілізація</div>
-        <h3 contenteditable="true">Квітка і Дерево</h3>
-        <p contenteditable="true">Показують, як людина працює з образами, її рівень саморегуляції. Дають початкову діагностичну інформацію і підтримку на рівні найглибших, архаїчних потреб.</p>
+        <h3>Квітка і Дерево</h3>
+        <p>Показують, як людина працює з образами, її рівень саморегуляції. Дають початкову діагностичну інформацію і підтримку на рівні найглибших, архаїчних потреб.</p>
       </div>
       <div class="motif">
         <div class="stage">02 · Базова безпека</div>
-        <h3 contenteditable="true">Луг</h3>
-        <p contenteditable="true">Базове відчуття безпеки та зв'язку з матір'ю, настрій і внутрішній стан. Дослідження досвіду ранніх стосунків і рівня довіри до світу.</p>
+        <h3>Луг</h3>
+        <p>Базове відчуття безпеки та зв'язку з матір'ю, настрій і внутрішній стан. Дослідження досвіду ранніх стосунків і рівня довіри до світу.</p>
       </div>
       <div class="motif">
         <div class="stage">03 · Ресурс і рух</div>
-        <h3 contenteditable="true">Струмок</h3>
-        <p contenteditable="true">Рух внутрішньої енергії, життєвий тонус. Робота з ранніми дитячо-батьківськими стосунками та психосоматичними проявами.</p>
+        <h3>Струмок</h3>
+        <p>Рух внутрішньої енергії, життєвий тонус. Робота з ранніми дитячо-батьківськими стосунками та психосоматичними проявами.</p>
       </div>
       <div class="motif">
         <div class="stage">04 · Перший поріг</div>
-        <h3 contenteditable="true">Узлісся</h3>
-        <p contenteditable="true">Перший крок до конфронтації, передсвідоме. Обережна робота зі страхами і частинами себе, які раніше було складно прийняти.</p>
+        <h3>Узлісся</h3>
+        <p>Перший крок до конфронтації, передсвідоме. Обережна робота зі страхами і частинами себе, які раніше було складно прийняти.</p>
       </div>
       <div class="motif">
         <div class="stage">05 · Ідентичність</div>
-        <h3 contenteditable="true">Будинок</h3>
-        <p contenteditable="true">Відповідь на питання «хто я». Внутрішні опори, кордони, самоцінність, приховані страхи, пов'язані з сімейним досвідом.</p>
+        <h3>Будинок</h3>
+        <p>Відповідь на питання «хто я». Внутрішні опори, кордони, самоцінність, приховані страхи, пов'язані з сімейним досвідом.</p>
       </div>
       <div class="motif">
         <div class="stage">06 · Соціум і амбіції</div>
-        <h3 contenteditable="true">Гора</h3>
-        <p contenteditable="true">Конкуренція, впевненість у собі, досягнення цілей. Едипальні теми, пошук власної ідентичності.</p>
+        <h3>Гора</h3>
+        <p>Конкуренція, впевненість у собі, досягнення цілей. Едипальні теми, пошук власної ідентичності.</p>
       </div>
     </div>
   </div>
@@ -411,13 +386,13 @@
 <section>
   <div class="wrap">
     <div class="kicker">Кому підходить</div>
-    <h2 class="title" contenteditable="true">Великого досвіду не потрібно</h2>
-    <p class="section-sub" contenteditable="true">Достатньо базової психологічної освіти та інтересу до глибинної роботи — далі веде програма.</p>
+    <h2 class="title">Великого досвіду не потрібно</h2>
+    <p class="section-sub">Достатньо базової психологічної освіти та інтересу до глибинної роботи — далі веде програма.</p>
     <div class="checklist">
-      <div class="check"><span class="dot"></span><span contenteditable="true">Студентам-психологам старших курсів</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Психологам на початку практики</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Практикуючим фахівцям, які хочуть системності у роботі</span></div>
-      <div class="check"><span class="dot"></span><span contenteditable="true">Психотерапевтам з інших модальностей, які шукають метод роботи з глибинним матеріалом</span></div>
+      <div class="check"><span class="dot"></span><span>Студентам-психологам старших курсів</span></div>
+      <div class="check"><span class="dot"></span><span>Психологам на початку практики</span></div>
+      <div class="check"><span class="dot"></span><span>Практикуючим фахівцям, які хочуть системності у роботі</span></div>
+      <div class="check"><span class="dot"></span><span>Психотерапевтам з інших модальностей, які шукають метод роботи з глибинним матеріалом</span></div>
     </div>
   </div>
 </section>
@@ -426,28 +401,28 @@
 <section class="section-dark">
   <div class="wrap">
     <div class="kicker">Формат і розклад</div>
-    <h2 class="title" contenteditable="true">Група «Зима 2026–2027»</h2>
-    <p class="section-sub" contenteditable="true" style="color:var(--cream-dim);">Онлайн, Zoom · субота–неділя, 10:00–18:00 за київським часом · 80 ак. год. загалом</p>
+    <h2 class="title">Група «Зима 2026–2027»</h2>
+    <p class="section-sub" style="color:var(--cream-dim);">Онлайн, Zoom · субота–неділя, 10:00–18:00 за київським часом · 80 ак. год. загалом</p>
     <div class="sched-grid">
       <div class="sched-card">
         <div class="tag">Т1 · Теорія</div>
-        <div class="name" contenteditable="true">Семінар I</div>
-        <div class="date" contenteditable="true">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
+        <div class="name">Семінар I</div>
+        <div class="date">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
       </div>
       <div class="sched-card">
         <div class="tag">А1 · Практика</div>
-        <div class="name" contenteditable="true">Семінар II</div>
-        <div class="date" contenteditable="true">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
+        <div class="name">Семінар II</div>
+        <div class="date">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
       </div>
       <div class="sched-card">
         <div class="tag">А2 · Практика</div>
-        <div class="name" contenteditable="true">Семінар III</div>
-        <div class="date" contenteditable="true">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
+        <div class="name">Семінар III</div>
+        <div class="date">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
       </div>
       <div class="sched-card">
         <div class="tag">А3 · Практика</div>
-        <div class="name" contenteditable="true">Семінар IV</div>
-        <div class="date" contenteditable="true">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
+        <div class="name">Семінар IV</div>
+        <div class="date">субота–неділя, 10:00–18:00 за київським часом, 20 ак. год.</div>
       </div>
     </div>
   </div>
@@ -457,17 +432,17 @@
 <section>
   <div class="wrap">
     <div class="kicker">Вартість</div>
-    <h2 class="title" contenteditable="true">Один крок за раз — або весь шлях одразу</h2>
+    <h2 class="title">Один крок за раз — або весь шлях одразу</h2>
     <div class="price-wrap">
       <div class="price-card">
         <div class="label">За один семінар</div>
-        <div class="amount" contenteditable="true">100 €</div>
-        <p class="note" contenteditable="true">2 дні, 20 ак. год. Можна долучитись поступово, семінар за семінаром.</p>
+        <div class="amount">100 €</div>
+        <p class="note">2 дні, 20 ак. год. Можна долучитись поступово, семінар за семінаром.</p>
       </div>
       <div class="price-card highlight">
         <div class="label">Повний курс, знижка 10%</div>
-        <div class="amount" contenteditable="true">360 €</div>
-        <p class="note" contenteditable="true">Замість 400 €. Усі 4 семінари, 80 ак. год., сертифікат ІРСГП.</p>
+        <div class="amount">360 €</div>
+        <p class="note">Замість 400 €. Усі 4 семінари, 80 ак. год., сертифікат ІРСГП.</p>
       </div>
     </div>
   </div>
@@ -480,9 +455,9 @@
     <div class="instructor">
       <img class="avatar" src="data:image/jpeg;base64,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" alt="Світлана Баранова">
       <div>
-        <h3 contenteditable="true">Світлана Баранова</h3>
-        <div class="role" contenteditable="true">Кандидат психологічних наук, доцент, психотерапевт, коуч, супервізор УСП</div>
-        <p contenteditable="true" style="color:var(--cream-dim);">30+ років практики, 25+ років викладання психології. Доцент-куратор навчальних програм ІРСГП у регіональному осередку м. Дніпро. Програма акредитована IGKB та УСП, відповідає вимогам EAP.</p>
+        <h3>Світлана Баранова</h3>
+        <div class="role">Кандидат психологічних наук, доцент, психотерапевт, коуч, супервізор УСП</div>
+        <p style="color:var(--cream-dim);">30+ років практики, 25+ років викладання психології. Доцент-куратор навчальних програм ІРСГП у регіональному осередку м. Дніпро. Програма акредитована IGKB та УСП, відповідає вимогам EAP.</p>
       </div>
     </div>
   </div>
@@ -492,22 +467,22 @@
 <section>
   <div class="wrap">
     <div class="kicker">Як долучитися</div>
-    <h2 class="title" contenteditable="true">Три кроки до участі</h2>
+    <h2 class="title">Три кроки до участі</h2>
     <div class="steps">
       <div class="step">
         <div class="idx">01</div>
-        <h3 contenteditable="true">Натисніть «Подати заявку»</h3>
-        <p contenteditable="true" style="color:var(--ink-soft);">Кнопка відкриє коротку Google-форму</p>
+        <h3>Натисніть «Подати заявку»</h3>
+        <p style="color:var(--ink-soft);">Кнопка відкриє коротку Google-форму</p>
       </div>
       <div class="step">
         <div class="idx">02</div>
-        <h3 contenteditable="true">Дайте відповіді на кілька запитань</h3>
-        <p contenteditable="true" style="color:var(--ink-soft);">Це допоможе нам зрозуміти ваш запит і рівень підготовки</p>
+        <h3>Дайте відповіді на кілька запитань</h3>
+        <p style="color:var(--ink-soft);">Це допоможе нам зрозуміти ваш запит і рівень підготовки</p>
       </div>
       <div class="step">
         <div class="idx">03</div>
-        <h3 contenteditable="true">Доцент-куратор зв'яжеться з вами</h3>
-        <p contenteditable="true" style="color:var(--ink-soft);">Відповість на запитання та допоможе визначитись з участю</p>
+        <h3>Доцент-куратор зв'яжеться з вами</h3>
+        <p style="color:var(--ink-soft);">Відповість на запитання та допоможе визначитись з участю</p>
       </div>
     </div>
   </div>
@@ -516,15 +491,15 @@
 <!-- FOOTER CTA -->
 <section class="footer-cta">
   <div class="wrap">
-    <h2 contenteditable="true">Приходьте познайомитись із методом</h2>
-    <p class="lead" contenteditable="true">Метод неможливо зрозуміти лише з опису — його потрібно прожити у практиці.</p>
-    <a href="https://forms.gle/xReoAgPkC9VFw92t5" class="cta" contenteditable="true">Подати заявку</a>
-    <p class="foot-note" contenteditable="true">Володіння методом робить психолога впевненим. А впевненість терапевта створює безпеку для клієнта.</p>
+    <h2>Приходьте познайомитись із методом</h2>
+    <p class="lead">Метод неможливо зрозуміти лише з опису — його потрібно прожити у практиці.</p>
+    <a href="https://forms.gle/xReoAgPkC9VFw92t5" class="cta">Подати заявку</a>
+    <p class="foot-note">Володіння методом робить психолога впевненим. А впевненість терапевта створює безпеку для клієнта.</p>
   </div>
 </section>
 
 <footer class="site">
-  <div class="wrap" contenteditable="true">2026 · Регіональний осередок ІРСГП, м. Дніпро</div>
+  <div class="wrap">2026 · Регіональний осередок ІРСГП, м. Дніпро</div>
 </footer>
 
 </body>
